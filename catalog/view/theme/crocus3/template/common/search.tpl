@@ -1,0 +1,2 @@
+<input type="text" name="search" value="<?php echo $search; ?>" placeholder="<?php echo $text_search; ?>" class="searchbox" id="search" autocomplete="off"/>
+  <button id="submit-button-search-header" type="button" class="btn btn-default search-btn-bg"><span class="glyphicon glyphicon-search"></span></button>
