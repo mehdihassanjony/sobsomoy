@@ -4,7 +4,28 @@
  echo $thmsoftcrocus_footer_fbcontent;
    }*/
 ?>
-
+<?php if($manufacturers) { ?>
+<div class="brand-logo">
+  <div class="container">
+      <div class="slider-items-products">
+        <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
+          <div class="slider-items slider-width-col6"> 
+              <?php foreach ($manufacturers as $_manufacturer) { ?>
+              <!-- Item -->
+              <div class="item"> 
+                <a href="<?php echo str_replace('&', '&amp;', $_manufacturer['href']); ?>">
+                  <img src="<?php echo $_manufacturer['manufacturer_image']?>" alt="<?php echo $_manufacturer['name']?>">
+                </a>
+              </div>
+              <!-- End Item -->
+              <?php }?>
+            </div><!-- slider-items slider-width-col6 -->
+          </div><!-- brand-logo-slider -->
+      </div><!-- slider-items-products -->
+  </div><!-- container -->
+</div><!-- brand-logo -->
+<?php } ?>       
+</div> <!-- page id -->
 <footer>
  <div class="footer-inner">
     <div class="container">
@@ -121,28 +142,7 @@
        
 
 </footer>
-<?php if($manufacturers) { ?>
-<div class="brand-logo">
-  <div class="container">
-      <div class="slider-items-products">
-        <div id="brand-logo-slider" class="product-flexslider hidden-buttons">
-          <div class="slider-items slider-width-col6"> 
-              <?php foreach ($manufacturers as $_manufacturer) { ?>
-              <!-- Item -->
-              <div class="item"> 
-                <a href="<?php echo str_replace('&', '&amp;', $_manufacturer['href']); ?>">
-                  <img src="<?php echo $_manufacturer['manufacturer_image']?>" alt="<?php echo $_manufacturer['name']?>">
-                </a>
-              </div>
-              <!-- End Item -->
-              <?php }?>
-            </div><!-- slider-items slider-width-col6 -->
-          </div><!-- brand-logo-slider -->
-      </div><!-- slider-items-products -->
-  </div><!-- container -->
-</div><!-- brand-logo -->
-<?php } ?>       
-</div> <!-- page id -->
+
 <div id="mobile-menu">
 <div class="mobile-menu-inner">
   <ul>

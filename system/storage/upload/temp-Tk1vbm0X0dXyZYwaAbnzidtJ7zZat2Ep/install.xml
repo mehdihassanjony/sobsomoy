@@ -1,0 +1,20 @@
+<modification>
+	<name>Add link to top categories menu</name>
+	<version>1.0.0</version>
+	<code>alttcm100</code>
+	<author>Impairedspook</author>
+
+<!-- Add a link to top category menu -->
+
+	<file path="catalog/view/theme/*/template/common/header.tpl">
+        <operation error="skip">
+            <search><![CDATA[<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>]]></search>
+            <add position="after" offset="2"><![CDATA[<li><a href="https://www.google.com">DISPLAYED TEXT</a></li>]]></add>
+        </operation>
+	</file>
+</modification>
+
+
+<!-- Note: Change https://www.google.com to the address you want to link to, change DISPLAYED TEXT to what text you want to display in the top categories -->
+
+

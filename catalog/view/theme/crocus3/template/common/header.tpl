@@ -200,7 +200,7 @@ footer .coppyright{color: <?php echo "#".$thmsoftcrocus_powerbycolor; ?>} <?php 
           <!-- Header Logo -->         
           <?php if ($logo) { ?>
               <div class="logo">  <a href="<?php echo $home; ?>" title="<?php echo $name; ?>">
-                  <img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>"/>
+                  <img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" style="width: 238px; height: 70px;"/>
                 </a></div>
           <?php } else { ?>
                 <div class="logo"><h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1></div>
